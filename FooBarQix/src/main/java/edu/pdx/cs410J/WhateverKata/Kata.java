@@ -13,4 +13,9 @@ public class Kata {
     System.err.println("Missing command line arguments");
     System.exit(1);
   }
+
+  public String transformString( String s ) {
+      return s;
+  }
 }
+
