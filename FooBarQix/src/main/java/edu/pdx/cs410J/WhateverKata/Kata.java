@@ -15,7 +15,21 @@ public class Kata {
   }
 
   public String transformString( String s ) {
-      return s;
+    String result = "";
+
+    for( int i = 0; i < s.length(); ++i ){
+      switch(s.charAt(i)){
+        case '3':
+          result = result + "Foo";
+          break;
+        default:
+          result = result + s.charAt(i);
+          break;
+      }
+    }
+
+    System.out.println(result);
+      return result;
   }
 }
 
